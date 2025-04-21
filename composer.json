@@ -1,14 +1,15 @@
 {
     "name": "vivek-mistry/repository-interface",
     "description": "Laravel package for dependency injection to separate business logic.",
-    "license": "MIT",
-    "type": "package",
-    "minimum-stability": "stable",
     "keywords": [
         "repository", "laravel-repository-pattern", "repositoryinterface",
         "repository-interface",
         "interface", "php", "laravel", "repository pattern", "clean architecture"
     ],
+    "license": "MIT",
+    "type": "library",
+    "minimum-stability": "stable",
+    
     "autoload": {
         "psr-4": {
             "VivekMistry\\RepositoryInterface\\": "src/"
