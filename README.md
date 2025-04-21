@@ -44,7 +44,7 @@ php artisan make:provider RepositoryServiceProvider
 
 For example : 
 
-```bash
+```php
 class UserController extends Controller
 {
     protected $userRepository;
