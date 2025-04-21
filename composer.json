@@ -1,10 +1,10 @@
 {
     "name": "vivek-mistry/repository-interface",
-    "description": "It is package used to generate for the model. So, basically it will create with the ic functioncality of model and it's used to seperate the business logic from the controller. So developers can used it for as a depedency-inejction operation.",
+    "description": "Laravel package for dependency injection to separate business logic.",
     "license": "MIT",
-    "type": "library",
+    "type": "package",
     "minimum-stability": "stable",
-    "keywords": [
+    "tags": [
         "repository", "laravel-repository-pattern", "repositoryinterface",
         "repository-interface",
         "interface", "php", "laravel", "pattern", "depedency-injection", 

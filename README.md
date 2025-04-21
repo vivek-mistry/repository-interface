@@ -1,6 +1,6 @@
 ## Laravel Repository Interface
 
-It is package used to generate for the model. So, basically it will create with the ic functioncality of model and it's used to seperate the business logic from the controller. So developers can used it for as a depedency-inejction operation.
+A Laravel package that leverages dependency injection to cleanly separate business logic from other application layers, promoting better code organization, testability, and adherence to SOLID principles.
 
 ## 🛠️ Installation
 
