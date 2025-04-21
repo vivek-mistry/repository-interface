@@ -7,8 +7,7 @@
     "keywords": [
         "repository", "laravel-repository-pattern", "repositoryinterface",
         "repository-interface",
-        "interface", "php", "laravel", "pattern", "depedency-injection", 
-        "vivek-mistry", "vivek", "mistry"
+        "interface", "php", "laravel", "repository pattern", "clean architecture"
     ],
     "autoload": {
         "psr-4": {
