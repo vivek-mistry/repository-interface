@@ -14,6 +14,13 @@ composer require vivek-mistry/repository-interface
 php app:make-repo {ModelName}
 ```
 
+So using above two files created at app/Repositories/Interface & app/Repositories/Repository
+<ul>
+<li>ModelNameInterface.php</li>
+<li>ModelNameInterfaceRepository.php</li>
+</ul>
+
+
 ## Create Service Prvider
 ```bash
 php artisan make:provider RepositoryServiceProvider
@@ -23,7 +30,7 @@ php artisan make:provider RepositoryServiceProvider
 <P>=> Register your service provider</P>
 <P>=> In your RepositoryServiceProvider add below : </P>
     
-```bash
+```php
     public function boot(): void
     {
         $this->app->bind(
