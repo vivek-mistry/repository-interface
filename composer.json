@@ -4,7 +4,7 @@
     "license": "MIT",
     "type": "package",
     "minimum-stability": "stable",
-    "tags": [
+    "keywords": [
         "repository", "laravel-repository-pattern", "repositoryinterface",
         "repository-interface",
         "interface", "php", "laravel", "pattern", "depedency-injection", 
