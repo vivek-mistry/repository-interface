@@ -4,6 +4,12 @@
     "license": "MIT",
     "type": "library",
     "minimum-stability": "stable",
+    "keywords": [
+        "repository", "laravel-repository-pattern", "repositoryinterface",
+        "repository-interface",
+        "interface", "php", "laravel", "pattern", "depedency-injection", 
+        "vivek-mistry", "vivek", "mistry"
+    ],
     "autoload": {
         "psr-4": {
             "VivekMistry\\RepositoryInterface\\": "src/"
