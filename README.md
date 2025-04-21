@@ -1,3 +1,10 @@
 ## Laravel Repository Interface
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+It is package used to generate for the model. So, basically it will create with the ic functioncality of model and it's used to seperate the business logic from the controller. So developers can used it for as a depedency-inejction operation.
+
+## 🛠️ Installation
+
+Install the package via Composer:
+
+```bash
+composer require vivek-mistry/repository-interface
