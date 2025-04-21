@@ -1,0 +1,26 @@
+{
+    "name": "vivek-mistry/repository-interface",
+    "description": "It is package used to generate for the model. So, basically it will create with the ic functioncality of model and it's used to seperate the business logic from the controller. So developers can used it for as a depedency-inejction operation.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "VivekMistry\\RepositoryInterface\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vivek Mistry",
+            "email": "vickymistry1818@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "VivekMistry\\RepositoryInterface\\RepositoryGeneratorServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.0"
+    }
+}

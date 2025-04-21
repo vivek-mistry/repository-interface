@@ -1,0 +1,67 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use App\Models\$CLASS_NAME$;
+use App\Repositories\Interface\$CLASS_NAME$RepositoryInterface;
+use Illuminate\Support\Facades\Log;
+
+class $CLASS_NAME$Repository implements $CLASS_NAME$RepositoryInterface
+{
+    public function createOrUpdate(array $data, string $id = null)
+    {
+        if (!isset($id)) {
+            $entity = new $CLASS_NAME$($data);
+        } else {
+            $entity = $CLASS_NAME$::find($id);
+
+            foreach ($data as $key => $value) {
+                $entity->$key = $value;
+            }
+        }
+        $entity->save();
+        return $entity;
+    }
+
+    public function getAll($draw = null, $start = null, $rawperpage = null): array
+    {
+
+        $entity = $CLASS_NAME$::where('id', '<>', null);
+
+        $clone_entity = clone $entity;
+        $totalRecords = $clone_entity->count();
+
+        if ($rawperpage) {
+            $entity->take($rawperpage)->skip($start);
+        }
+
+        $result = $entity->get();
+
+        $response = [
+            "total" => $totalRecords,
+            "data" => $result
+        ];
+        return $response;
+    }
+
+    public function getRecordById(string $id, array $with = []){
+        $entity = $CLASS_NAME$::where('id', '=', $id);
+
+        if($with)
+        {
+            if(in_array('batch_master', $with))
+            {
+                $entity->with('batch_master');
+            }
+        }
+
+        $result = $entity->firstorfail();
+
+        return $result;
+    }
+
+    public function getRecordByField(string $field_name, string $field_value){
+        return $CLASS_NAME$::where($field_name, $field_value)->first();
+    }
+
+}
