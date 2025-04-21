@@ -8,3 +8,9 @@ Install the package via Composer:
 
 ```bash
 composer require vivek-mistry/repository-interface
+
+## Create Service Prvider
+
+
+```bash
+php artisan make:provider RepositoryServiceProvider
