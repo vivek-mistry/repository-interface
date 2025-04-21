@@ -3,6 +3,7 @@
     "description": "It is package used to generate for the model. So, basically it will create with the ic functioncality of model and it's used to seperate the business logic from the controller. So developers can used it for as a depedency-inejction operation.",
     "license": "MIT",
     "type": "library",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "VivekMistry\\RepositoryInterface\\": "src/"
