@@ -3,7 +3,7 @@
     "description": "Laravel package for dependency injection to separate business logic.",
     "keywords": [
         "repository", "laravel-repository-pattern", "repositoryinterface",
-        "repository-interface",
+        "repository-interface", "dependency-injection",
         "interface", "php", "laravel", "repository pattern", "clean architecture"
     ],
     "license": "MIT",
