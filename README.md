@@ -4,9 +4,6 @@ A Laravel package that leverages dependency injection to cleanly separate busine
 
 
 
-
-
-
 ## 🛠️ Installation
 
 Install the package via Composer:
@@ -84,5 +81,4 @@ composer test
 - [Vivek Mistry](https://github.com/vivek-mistry) - Project creator and maintainer
 
 ## License
-The MIT License (MIT). 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+MIT License. See [LICENSE](/vivek-mistry/repository-interface/blob/main/LICENSE) for details.
