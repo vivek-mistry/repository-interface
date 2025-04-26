@@ -1,6 +1,6 @@
 ## Laravel Repository Interface
 
-A Laravel package that leverages dependency injection to cleanly separate business logic from other application layers, promoting better code organization, testability, and adherence to SOLID principles.
+A Laravel package that leverages dependency injection to cleanly separate business logic from other application layers, promoting better code organization, testability, and adherence to SOLID principles
 
 
 ![Version](https://img.shields.io/packagist/v/vivek-mistry/repository-interface.svg?style=flat-square&label=Latest%20Stable%20Version)
