@@ -76,7 +76,6 @@ class MakeRepo extends Command
         } else {
             $this->info("File : {$pathrepo} already exits");
         }
-
     }
 
     public function getSourceFile()
@@ -115,48 +114,49 @@ class MakeRepo extends Command
         $contents = file_get_contents($stub);
 
         foreach ($stubVariables as $search => $replace) {
-            $contents = str_replace('$'.$search.'$', $replace, $contents);
+            $contents = str_replace('$' . $search . '$', $replace, $contents);
         }
 
         return $contents;
-
     }
 
     public function getSourceFilePath()
     {
         // return __DIR__.'/../../../../app/Repositories/Interface/'.$this->argument('name').'RepositoryInterface.php';
-        return app_path('Repositories/Interface/'.$this->argument('name').'RepositoryInterface.php');
+        return app_path('Repositories/Interface/' . $this->argument('name') . 'RepositoryInterface.php');
     }
 
     public function getSourceFilePathRepo()
     {
         // return __DIR__.'/../../../../app/Repositories/Repository/'.$this->argument('name').'Repository.php';
-        return app_path('Repositories/Repository/'.$this->argument('name').'Repository.php');
+        return app_path('Repositories/Repository/' . $this->argument('name') . 'Repository.php');
     }
 
     public function getStubPath()
     {
         // return __DIR__.'/../../../stubs/repository-interface.stub';
 
-        return __DIR__.'/../Stubs/repository-interface.stub';
+        return __DIR__ . '/../Stubs/repository-interface.stub';
     }
 
     public function getStubPathRepo()
     {
         // return __DIR__.'/../../../stubs/repository.stub';
 
-        return __DIR__.'/../Stubs/repository.stub';
-
-
+        return __DIR__ . '/../Stubs/repository.stub';
     }
 
-    protected function makeDirectory($path)
+    protected function makeDirectory($path): string
     {
-        // dd($path);
         if (! $this->files->isDirectory($path)) {
             $this->files->makeDirectory($path, 0777, true, true);
         }
 
         return $path;
+    }
+
+    public function getSignature(): string
+    {
+        return $this->signature;
     }
 }
