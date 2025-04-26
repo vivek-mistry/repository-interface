@@ -3,11 +3,7 @@
 A Laravel package that leverages dependency injection to cleanly separate business logic from other application layers, promoting better code organization, testability, and adherence to SOLID principles
 
 
-![Version](https://img.shields.io/packagist/v/vivek-mistry/repository-interface.svg?style=flat-square&label=Latest%20Stable%20Version)
 
-![Downloads](https://img.shields.io/packagist/dt/vivek-mistry/repository-interface.svg?style=flat-square&label=Total%20Downloads)
-
-![License](https://img.shields.io/github/license/vivek-mistry/repository-interface.svg?style=flat-square)
 
 
 
