@@ -10,6 +10,7 @@ A Laravel package that leverages dependency injection to cleanly separate busine
 ![License](https://img.shields.io/github/license/vivek-mistry/repository-interface.svg?style=flat-square)
 
 
+
 ## 🛠️ Installation
 
 Install the package via Composer:
