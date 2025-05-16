@@ -13,7 +13,7 @@ composer require vivek-mistry/repository-interface
 
 ## Particular Model Generare the Repository-Interface
 ```bash
-php app:make-repo {ModelName}
+php artisan app:make-repo {ModelName}
 ```
 
 So using above two files created at app/Repositories/Interface & app/Repositories/Repository
