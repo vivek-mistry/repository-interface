@@ -49,10 +49,7 @@ class $CLASS_NAME$Repository implements $CLASS_NAME$RepositoryInterface
 
         if($with)
         {
-            if(in_array('batch_master', $with))
-            {
-                $entity->with('batch_master');
-            }
+            
         }
 
         $result = $entity->firstorfail();
