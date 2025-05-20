@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Log;
 
 class $CLASS_NAME$Repository implements $CLASS_NAME$RepositoryInterface
 {
-    public function createOrUpdate(array $data, string $id = null)
+    public function createOrUpdate(array $data, ?string $id = null)
     {
         if (!isset($id)) {
             $entity = new $CLASS_NAME$($data);
