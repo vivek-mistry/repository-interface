@@ -2,8 +2,6 @@
 
 A Laravel package that leverages dependency injection to cleanly separate business logic from other application layers, promoting better code organization, testability, and adherence to SOLID principles
 
-
-
 ## 🛠️ Installation
 
 Install the package via Composer:
@@ -11,10 +9,22 @@ Install the package via Composer:
 composer require vivek-mistry/repository-interface
 ```
 
-## Particular Model Generare the Repository-Interface
+## Get Plain Repository Interface
+```bash
+php artisan app:make-repo {ModelName} --plain
+```
+
+## Particular Model Generate the Repository-Interface
 ```bash
 php artisan app:make-repo {ModelName}
 ```
+With basic functions you will get here like,
+<ul>
+<li>public function createOrUpdate(array $data, $id = null);</li>
+<li>public function getAll($draw = null, $start = null, $rawperpage = null);</li>
+<li>public function getRecordById($id, array $with = []);</li>
+<li>public function getRecordByField(string $field_name, string $field_value);</li>
+</ul>
 
 So using above two files created at app/Repositories/Interface & app/Repositories/Repository
 <ul>
@@ -75,6 +85,11 @@ class UserController extends Controller
 ```php
 composer test
 ```
+
+## Change Logs
+Date : 27 Sept, 2025
+- Update the Minor bugs of functions
+- Added Plain Repository/Interface
 
 ## Credits
 

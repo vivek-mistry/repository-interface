@@ -8,12 +8,14 @@ use Illuminate\Support\Pluralizer;
 
 class MakeRepo extends Command
 {
+    protected $plain = "";
+
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'app:make-repo {name}';
+    protected $signature = 'app:make-repo {name} {--plain}';
 
     /**
      * The console command description.
@@ -44,6 +46,7 @@ class MakeRepo extends Command
      */
     public function handle()
     {
+        $this->plain = $this->option('plain');
         /**
          * For Interface
          */
@@ -122,27 +125,27 @@ class MakeRepo extends Command
 
     public function getSourceFilePath()
     {
-        // return __DIR__.'/../../../../app/Repositories/Interface/'.$this->argument('name').'RepositoryInterface.php';
         return app_path('Repositories/Interface/' . $this->argument('name') . 'RepositoryInterface.php');
     }
 
     public function getSourceFilePathRepo()
     {
-        // return __DIR__.'/../../../../app/Repositories/Repository/'.$this->argument('name').'Repository.php';
         return app_path('Repositories/Repository/' . $this->argument('name') . 'Repository.php');
     }
 
     public function getStubPath()
     {
-        // return __DIR__.'/../../../stubs/repository-interface.stub';
-
+        if($this->plain){
+            return __DIR__ . '/../Stubs/repository-interface-plain.stub';    
+        }
         return __DIR__ . '/../Stubs/repository-interface.stub';
     }
 
     public function getStubPathRepo()
     {
-        // return __DIR__.'/../../../stubs/repository.stub';
-
+        if($this->plain){
+            return __DIR__ . '/../Stubs/repository-plain.stub';    
+        }
         return __DIR__ . '/../Stubs/repository.stub';
     }
 
