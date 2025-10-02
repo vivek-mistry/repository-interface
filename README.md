@@ -96,4 +96,4 @@ Date : 27 Sept, 2025
 - [Vivek Mistry](https://github.com/vivek-mistry) - Project creator and maintainer
 
 ## License
-MIT License. See [LICENSE](https://github.com/vivek-mistry/repository-interface/blob/main/LICENSE) for details.
+MIT License. See [LICENSE](https://github.com/vivek-mistry/repository-interface/blob/DEV/LICENSE) for details.
