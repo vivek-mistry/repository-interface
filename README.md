@@ -1,6 +1,7 @@
 <p align="center">
   <img src="docs/images/repository_interface.png" alt="Repository Interface"  width="80%">
 </p>
+
 ## Laravel Repository Interface
 
 A Laravel package that leverages dependency injection to cleanly separate business logic from other application layers, promoting better code organization, testability, and adherence to SOLID principles
